@@ -1,120 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Stock Advisor Group – Stock Market Education Community</title>
-<meta name="description" content="A free educational community to learn stock market basics, charts, Nifty, Bank Nifty and options concepts in simple language. Education only.">
-<style>
-*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-html{-webkit-text-size-adjust:100%}
-body{min-height:100vh;background:radial-gradient(circle at 15% 0,#7b2ff7 0,transparent 45%),radial-gradient(circle at 90% 100%,#f107a3 0,transparent 45%),#1a0638;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#fff;display:flex;justify-content:center;padding:max(12px,env(safe-area-inset-top)) 12px max(12px,env(safe-area-inset-bottom))}
-.card{width:100%;max-width:440px;align-self:flex-start;border-radius:28px;padding:30px 14px 22px;text-align:center;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.28);box-shadow:0 12px 40px rgba(0,0,0,.35)}
-.avatar{width:116px;height:116px;border-radius:50%;object-fit:cover;background:#3b1a6e;box-shadow:0 0 0 4px #ffc93c,0 0 28px rgba(255,201,60,.55)}
-h1{margin-top:20px;font-size:clamp(26px,8vw,36px);line-height:1.15;font-weight:800}
-h1 span{display:block;background:linear-gradient(90deg,#ffd84d,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
-.sub{margin:14px 4px 18px;color:#eadcff;font-size:15px;line-height:1.6}
-.btn{display:block;min-height:56px;padding:17px 10px;border-radius:40px;background:linear-gradient(90deg,#ffd84d,#ff8a1f);color:#2a0b4d;font-weight:800;font-size:clamp(16px,4.8vw,19px);text-decoration:none;box-shadow:0 8px 24px rgba(255,170,40,.45)}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:20px}
-.stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:12px 2px}
-.stat b{display:block;color:#ffd84d;font-size:clamp(14px,4.4vw,18px)}
-.stat small{color:#dccaf7;font-size:12px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0 18px}
-.item{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:16px;padding:14px 10px;font-weight:700;font-size:clamp(12px,3.6vw,14.5px);text-align:left;line-height:1.3}
-.item i{font-style:normal;font-size:22px}
-.box{margin:0 0 14px;text-align:left;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);border-radius:18px;padding:16px 14px}
-.box h2{font-size:17px;color:#ffd84d;margin-bottom:10px;text-align:center}
-.box p{font-size:14px;line-height:1.65;color:#eadcff;margin-bottom:8px}
-.box dl dt{font-size:14px;font-weight:700;color:#fff;margin-top:10px}
-.box dl dd{font-size:13.5px;line-height:1.55;color:#dccaf7;margin-top:2px}
-.steps{list-style:none;counter-reset:s}
-.steps li{counter-increment:s;position:relative;font-size:14px;line-height:1.55;color:#fff;padding:9px 0 9px 36px;border-top:1px solid rgba(255,255,255,.12)}
-.steps li:first-child{border-top:0}
-.steps li:before{content:counter(s);position:absolute;left:0;top:9px;width:26px;height:26px;border-radius:50%;background:#ffd84d;color:#2a0b4d;font-weight:800;font-size:13px;text-align:center;line-height:26px}
-.note{border-color:rgba(255,216,77,.5)}
-.disc{margin-top:16px;color:#c9b6e6;font-size:12px;line-height:1.6}
-</style>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '4668758756680641');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4668758756680641&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Handwriting - Learn & Improve Penmanship</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --primary: #0088cc;
+      --primary-hover: #0077b3;
+      --accent-bg: #e0f2fe;
+      --accent-text: #0369a1;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.5;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 16px;
+    }
+
+    .wrapper {
+      max-width: 440px;
+      width: 100%;
+      margin: auto;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 28px 22px;
+      box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 4px 10px -2px rgba(15, 23, 42, 0.04);
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: var(--accent-bg);
+      color: var(--accent-text);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+
+    .logo-container {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, #0088cc, #38bdf8);
+      box-shadow: 0 6px 16px rgba(0, 136, 204, 0.2);
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      background: #fff;
+      display: block;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      letter-spacing: -0.4px;
+    }
+
+    .subtitle {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      margin-bottom: 22px;
+      padding: 0 6px;
+    }
+
+    .cta-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      background-color: var(--primary);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 15px 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px -4px rgba(0, 136, 204, 0.45);
+      transition: transform 0.15s ease, background-color 0.2s ease;
+      margin-bottom: 24px;
+    }
+
+    .cta-btn:hover {
+      background-color: var(--primary-hover);
+      transform: translateY(-1px);
+    }
+
+    .cta-btn:active {
+      transform: scale(0.98);
+    }
+
+    .cta-btn svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    .features {
+      text-align: left;
+      background-color: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 18px;
+    }
+
+    .features-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .feature-list li {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .check-icon {
+      color: #0284c7;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .disclaimer-box {
+      font-size: 11.5px;
+      color: #64748b;
+      line-height: 1.45;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 18px;
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links button {
+      background: none;
+      border: none;
+      color: #475569;
+      font-size: 12px;
+      font-family: inherit;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .footer-links button:hover {
+      color: var(--text-main);
+    }
+
+    /* Modal Styles */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.6);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-box {
+      background: #fff;
+      max-width: 420px;
+      width: 100%;
+      border-radius: 16px;
+      padding: 22px;
+      max-height: 80vh;
+      overflow-y: auto;
+      text-align: left;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+    }
+
+    .modal-header h3 {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .close-btn {
+      background: #f1f5f9;
+      border: none;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      font-size: 16px;
+      cursor: pointer;
+      color: #334155;
+    }
+
+    .modal-body p {
+      font-size: 13px;
+      color: #475569;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 <body>
-<main class="card">
-  <img class="avatar" src="https://iili.io/oKVlEEG.jpg" alt="Stock Advisor Group" width="116" height="116">
-  <h1>STOCK ADVISOR<span>GROUP ™</span></h1>
-  <p class="sub">Stock Market Education Community •<br>Learn Nifty, Bank Nifty &amp; Options Basics</p>
 
-  <a class="btn" href="https://t.me/+CAruIKtBE1dlZmRl" rel="noopener">🚀 JOIN TELEGRAM</a>
+  <div class="wrapper">
+    <main class="card">
+      <div class="badge">Educational Community</div>
 
-  <div class="stats">
-    <div class="stat"><b>Free</b><small>Education</small></div>
-    <div class="stat"><b>Simple</b><small>Language</small></div>
-    <div class="stat"><b>Beginner</b><small>Friendly</small></div>
+      <div class="logo-container">
+        <img src="https://iili.io/oqxC4WP.jpg" alt="Handwriting Channel Logo" />
+      </div>
+
+      <h1>Handwriting</h1>
+      <p class="subtitle">
+        Daily practice guides, neat penmanship tips, and structured writing resources for students and learners.
+      </p>
+
+      <!-- Single Primary CTA Above the Fold -->
+      <a href="https://t.me/+7Z_pBN0zCzo0OTU1" class="cta-btn" id="telegram-cta" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+        </svg>
+        Join Telegram Channel
+      </a>
+
+      <div class="features">
+        <div class="features-title">What You Will Learn Inside:</div>
+        <ul class="feature-list">
+          <li><span class="check-icon">✓</span> Step-by-step cursive & print handwriting worksheets</li>
+          <li><span class="check-icon">✓</span> Daily practice exercises for speed and neatness</li>
+          <li><span class="check-icon">✓</span> Pen grip, spacing, and alignment techniques</li>
+          <li><span class="check-icon">✓</span> Free downloadable PDF practice sheets</li>
+        </ul>
+      </div>
+
+      <div class="disclaimer-box">
+        <strong>Educational Disclaimer:</strong> This channel is strictly for educational and skill-improvement purposes. We do not offer any job guarantees, fixed income, or financial returns.
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <button type="button" onclick="openModal('privacy')">Privacy Policy</button>
+        <button type="button" onclick="openModal('terms')">Terms of Use</button>
+        <button type="button" onclick="openModal('disclaimer')">Disclaimer</button>
+      </div>
+      <p>&copy; 2026 Handwriting Educational Community. All rights reserved.</p>
+    </footer>
   </div>
 
-  <div class="grid">
-    <div class="item"><i>📈</i>Nifty Basics</div>
-    <div class="item"><i>🏦</i>Bank Nifty Basics</div>
-    <div class="item"><i>💹</i>Options Basics</div>
-    <div class="item"><i>📊</i>Chart Reading</div>
+  <!-- Legal Modals -->
+  <div class="modal-overlay" id="legalModal" onclick="closeModalOnOutside(event)">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modalTitle">Policy</h3>
+        <button type="button" class="close-btn" onclick="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body" id="modalContent"></div>
+    </div>
   </div>
 
-  <section class="box">
-    <h2>About This Community</h2>
-    <p>This is a free learning space for students and beginners who want to understand how the Indian stock market works. Everything shared here is educational: concepts, explanations and examples, in simple language.</p>
-    <p>The goal is knowledge, not recommendations. Members learn to read charts, understand market terms and think about risk before anything else.</p>
-  </section>
+  <script>
+    const legalTexts = {
+      privacy: {
+        title: "Privacy Policy",
+        body: "<p>We respect your privacy. This landing page does not collect personal information such as your name, phone number, or email address directly.</p><p>Clicking the button simply redirects you to the official Telegram platform.</p>"
+      },
+      terms: {
+        title: "Terms of Use",
+        body: "<p>All practice sheets, guides, and resources shared inside the Handwriting Telegram channel are meant strictly for personal learning and educational development.</p><p>Users are encouraged to practice consistently for skill improvement.</p>"
+      },
+      disclaimer: {
+        title: "Full Disclaimer",
+        body: "<p>This website and the associated Telegram community are independent educational initiatives and are not affiliated with, endorsed by, or sponsored by Meta Platforms, Inc. (Facebook/Instagram) or Telegram.</p><p>No employment, freelance contracts, or monetary earnings are promised or implied.</p>"
+      }
+    };
 
-  <section class="box">
-    <h2>Your Learning Path</h2>
-    <ol class="steps">
-      <li><b>Market Basics:</b> what shares, NSE, BSE and indices are</li>
-      <li><b>Index Concepts:</b> how Nifty 50 and Bank Nifty are made</li>
-      <li><b>Chart Reading:</b> candlesticks, trends, support and resistance</li>
-      <li><b>Options Basics:</b> call, put, strike price, expiry and premium</li>
-      <li><b>Risk Awareness:</b> stop-loss, position size and capital protection</li>
-      <li><b>Mindset:</b> patience, discipline and emotional control</li>
-    </ol>
-  </section>
+    function openModal(type) {
+      document.getElementById('modalTitle').innerText = legalTexts[type].title;
+      document.getElementById('modalContent').innerHTML = legalTexts[type].body;
+      document.getElementById('legalModal').classList.add('active');
+    }
 
-  <section class="box">
-    <h2>Key Terms Explained</h2>
-    <dl>
-      <dt>Nifty 50</dt>
-      <dd>An index of 50 large companies listed on the NSE. It shows the overall direction of the Indian market.</dd>
-      <dt>Bank Nifty</dt>
-      <dd>An index made up of major banking stocks. It reflects how the banking sector is moving.</dd>
-      <dt>Candlestick</dt>
-      <dd>A chart symbol that shows the open, high, low and close price for a time period.</dd>
-      <dt>Support &amp; Resistance</dt>
-      <dd>Price levels where a market has often paused or turned in the past.</dd>
-      <dt>Option</dt>
-      <dd>A contract linked to an underlying asset. It comes with a strike price and an expiry date.</dd>
-      <dt>Stop-loss</dt>
-      <dd>A risk-control concept that limits how much loss one is willing to accept on a position.</dd>
-    </dl>
-  </section>
+    function closeModal() {
+      document.getElementById('legalModal').classList.remove('active');
+    }
 
-  <section class="box note">
-    <h2>Please Note</h2>
-    <p>This channel shares educational content only. We do not offer buy or sell recommendations, and we do not manage anyone's money. Market learning needs time, practice and patience.</p>
-  </section>
+    function closeModalOnOutside(e) {
+      if (e.target.id === 'legalModal') {
+        closeModal();
+      }
+    }
+  </script>
 
-  <p class="disc">For educational and informational purposes only. Not investment advice. Past performance does not indicate future results, and we do not guarantee any returns. Investments in the securities market are subject to market risks; please consult a SEBI-registered advisor before making any investment decisions.</p>
-</main>
 </body>
 </html>
